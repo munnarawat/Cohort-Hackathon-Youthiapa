@@ -1,0 +1,55 @@
+@font-face {
+  font-family: "Montserrat";
+  src: url(/src/assets/fonts/Montserrat-Bold.ttf);
+}
+@font-face {
+  font-family: "Inter";
+  src: url(/src/assets/fonts/Inter_18pt-Regular.ttf);
+}
+@font-face {
+  font-family: "Manrope";
+  src: url(/src/assets/fonts/Manrope-Medium.ttf);
+}
+@font-face {
+  font-family: "Poppins";
+  src: url(/src/assets/fonts//Poppins-Regular.ttf);
+}
+@import "tailwindcss";
+@plugin "daisyui";
+@import "lenis/dist/lenis.css";
+
+@theme {
+  --font-montserrat: "Montserrat", sans-serif;
+  --font-inter: "Inter", sans-serif;
+  --font-manrope: "Manrope", sans-serif;
+  --font-poppins: "Poppins", sans-serif;
+}
+
+@theme {
+  --color-background: #0d0d0d;
+  --color-secondary: #1f1f1f;
+  --color-button: #ffd600;
+  --color-textcolor: #ffffff;
+  --color-btnbg: #615f5f6a;
+}
+@layer base {
+  .text3d {
+    transform: translateZ(50px) rotateX(10deg);
+    text-shadow: 0 0 10px rgba(97, 96, 96, 0.699);
+  }
+  .img-container-wrapper {
+    /* -ms-ove rflow-style: none;  IE and Edge */
+    scrollbar-width: none; /* Firefox */
+  }
+  .mixed {
+    mix-blend-mode: difference;
+  }
+  .platform:hover {
+    box-shadow: 0px 0px 0px 4px #897cec, 0px 0px 0px 4px #a69dee;
+    animation: elasticOutline 0.3s ease-out;
+  }
+  .hide-bar {
+    scrollbar-width: none;
+    
+  }
+}
